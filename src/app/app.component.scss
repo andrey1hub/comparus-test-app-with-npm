@@ -1,0 +1,10 @@
+.app-container {
+  max-width: 540px;
+  margin: 0 auto;
+  .controls {
+    .score {
+      text-align: center;
+      line-height: 2rem;
+    }
+  }
+}

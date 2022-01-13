@@ -1,0 +1,19 @@
+.tile-wrapper {
+  float: left;
+  width: 10%;
+  height: 10%;
+  .tile {
+    background-color: blue;
+    width: 93.5%;
+    height: 93.5%;
+    &.lighted {
+      background-color: yellow;
+    }
+    &.resolved {
+      background-color: green;
+    }
+    &.failed {
+      background-color: red;
+    }
+  }
+}

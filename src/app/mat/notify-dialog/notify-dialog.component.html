@@ -1,0 +1,8 @@
+<h1 class="text-center">Вы {{ data.userScore === 10 && 'выиграли' || 'проиграли' }}</h1>
+<div class="mb-4 text-center">
+  <h5 class="fw-normal">Счёт:</h5>
+  <h2>{{ data.userScore }}-{{ data.compScore }}</h2>
+</div>
+<div class="mb-2">
+  <button class="btn btn-secondary app-bttn-close-dialog w-50" (click)="onClose()">Закрыть</button>
+</div>

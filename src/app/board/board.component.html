@@ -1,0 +1,3 @@
+<div class="board" #board [ngStyle]="{ 'height': board.offsetWidth + 'px' }">
+  <app-tile *ngFor="let item of stack" [data]="item"></app-tile>
+</div>

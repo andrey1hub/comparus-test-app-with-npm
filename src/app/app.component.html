@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="app-container">
+    <div class="controls py-2">
+      <div class="row mx-0">
+        <div class="col-4 ps-0">
+          <button type="button" class="btn btn-secondary w-100" [disabled]="playing || timeControl.invalid" (click)="onStart()">Начать</button>
+        </div>
+        <div class="col-4 px-0">
+          <input type="text" class="form-control text-center" [class.is-invalid]="timeControl.invalid" [formControl]="timeControl" placeholder="Время, мс">
+        </div>
+        <div class="col-4 pe-0 score">{{ score?.user }} - {{ score?.comp }}</div>
+      </div>
+    </div>
+    <app-board></app-board>
+  </div>
+</div>
